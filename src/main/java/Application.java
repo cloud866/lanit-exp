@@ -2,12 +2,12 @@ import animals.Kotik;
 
 public class Application {
     public static void main(String[] args) {
-        Kotik kotik1 = new Kotik("Мурзик", "Мяу-мяу", 7, 3.5);
+        Kotik kotik1 = new Kotik("Мурзик", "Мяу-мяу", 5, 5);
         Kotik kotik2 = new Kotik();
         kotik2.setName("Барсик");
         kotik2.setVoice("Мяу");
-        kotik2.setSatiety(5);
-        kotik2.setWeight(4.2);
+        kotik2.setSatiety(-10);
+        kotik2.setWeight(2);
 
         String[] kotik1Activities = kotik1.liveAnotherDay();
         for (String activity : kotik1Activities) {
@@ -16,6 +16,7 @@ public class Application {
 
         System.out.println("Имя котика: " + kotik2.getName());
         System.out.println("Вес котика: " + kotik2.getWeight());
+
 
         boolean sameVoice = compareVoice(kotik1, kotik2);
         System.out.println("Котики разговаривают одинаково: " + sameVoice);

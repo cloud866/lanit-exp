@@ -6,13 +6,13 @@ public class Kotik {
     private String name;
     private String voice;
     private int satiety;
-    private double weight;
+    private int weight;
 
     public Kotik() {
         count++;
     }
 
-    public Kotik(String name, String voice, int satiety, double weight) {
+    public Kotik(String name, String voice, int satiety, int weight) {
         this.name = name;
         this.voice = voice;
         this.satiety = satiety;
@@ -48,11 +48,11 @@ public class Kotik {
         this.satiety = satiety;
     }
 
-    public double getWeight() {
+    public int getWeight() {
         return weight;
     }
 
-    public void setWeight(double weight) {
+    public void setWeight(int weight) {
         this.weight = weight;
     }
 
